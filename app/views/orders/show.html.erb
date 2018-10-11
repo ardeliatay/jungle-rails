@@ -6,6 +6,7 @@
 
   <div class="order-summary jumbotron">
     <h4>Thank you for your order!</h4>
+    <%= current_user.email %>
   </div>
 
   <div class="panel panel-default items">
@@ -29,7 +30,7 @@
             TOTAL:
           </th>
           <th>
-            <%= cart_subtotal_cents / 100.0 %>
+            <%= @order.total_cents / 100.0 %>
           </th>
         </tr>
       </tfoot>
