@@ -48,7 +48,8 @@
   
         
   <div class="row">
-      
+ 
+  <% if current_user %>
   <div class="col-sm-6">
     <%= form_for [@product, @reviews.build] do |form| %>
 
@@ -78,7 +79,7 @@
     <% end %>
     </div>
   </div>
-  
+  <% end %>
   
   </article>
 
