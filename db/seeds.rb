@@ -138,21 +138,21 @@ Review.create!({
   product_id:  1,
   user_id: 2,
   description: 'AWESOMMMEEE',
-  rating: 'YAY'
+  rating: '🐣🐣🐣🐣🐣'
 })
 
 Review.create!({
   product_id:  1,
   user_id: 2,
-  description: 'SKRRRTT',
-  rating: 'LITTT'
+  description: 'ITS AIGHHHHT',
+  rating: '🐣🐣🐣'
 })
 
 Review.create!({
   product_id:  4,
   user_id: 5,
   description: 'LAMEEEEE',
-  rating: 'BOOO'
+  rating: '🐣'
 })
 
 
