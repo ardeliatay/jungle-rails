@@ -31,6 +31,7 @@
 
   <article class="reviews">
   
+
     <div class="col-sm-8">
         <dl class="dl-horizontal">
           <% @reviews.each do |review| %>
@@ -42,6 +43,13 @@
           <dd><%= review.description %></dd>
           <dt>Rating</dt>
           <dd><%= review.rating %></dd>
+          <dd>
+          
+          <% if current_user.id == review.user_id %>
+    <%= link_to fa_icon('trash'), [@product, review], class: 'btn btn-sm btn-danger', method: :delete, data: { confirm: "Are you sure?" }  %>
+  </dd>
+  <% end %>
+
           <% end %>
         </dl>
       </div>

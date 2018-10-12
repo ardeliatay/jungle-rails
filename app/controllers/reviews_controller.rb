@@ -1,6 +1,6 @@
 class ReviewsController < ApplicationController
 
-  before_action :authorize
+  before_action :current_user, only: [:create, :destroy]
   
   def create
   @product = Product.find params[:product_id]
@@ -9,6 +9,13 @@ class ReviewsController < ApplicationController
   
   @review.save
   redirect_to @product
+  end
+
+  def destroy
+    @product = Product.find params[:product_id]
+    @review = @product.reviews.find(params[:id])
+    @review.destroy
+    redirect_to @product, notice: 'Review deleted!'
   end
 
   private 
