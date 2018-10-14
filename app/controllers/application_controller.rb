@@ -10,6 +10,7 @@ class ApplicationController < ActionController::Base
   end
   helper_method :current_user # allows us to use @current_user in our view files
 
+
   def authorize
     redirect_to '/login' unless current_user
   end
