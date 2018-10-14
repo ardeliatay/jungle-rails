@@ -26,3 +26,8 @@ More information in their docs: <https://stripe.com/docs/testing#cards>
 * Rails 4.2 [Rails Guide](http://guides.rubyonrails.org/v4.2/)
 * PostgreSQL 9.x
 * Stripe
+
+## Screenshots
+!["Screenshot of the main product show page."](https://github.com/ardeliatay/jungle-rails/blob/master/public/docs/products-show-page.png)
+!["Screenshot of details and ratings for a specific product."](https://github.com/ardeliatay/jungle-rails/blob/master/public/docs/product-details-page.png)
+!["Screenshot of checkout page."](https://github.com/ardeliatay/jungle-rails/blob/master/public/docs/cart-page.png)
